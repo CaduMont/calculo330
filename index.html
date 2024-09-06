@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/code.js" ></script>
+</head>
+<body>
+    <div class="imagem"></div>
+    <div class="principal" >
+    <div class="box-title">
+        <h2 id="top-box" >Estimativa de peso de bags</h2>
+    </div>
+    <div class="box-left">
+        <p>Quantidade de PAX</p>
+        <input id="valor1" type="number" placeholder="Digite um valor">
+        <br><br>
+        <p>Média dos últimos 3 dias</p>
+        <input id="valor2" type="number" placeholder="Digite um valor">
+        <br><br><br>
+        <button onclick="calcularMediaDeBags()" >Calcular</button>
+    </div>
+
+    <div class="box-right">
+        <p id="resultadoMedia" >Média de bagagens</p>
+        <p id="info" ></p>
+    </div>
+
+    <div class="box-fuel">
+        <h2 id="bottom-box" >Diferença de fuel</h2>
+    </div>
+    <div class="box-bottom-left">
+        <p>Fuel do Comandante</p>
+        <input id="fuel-coma" type="number" placeholder="Digite um valor">
+        <br><br>
+        <p>Fuel recomendado</p>
+        <input id="fuel-rec" type="number" placeholder="Digite um valor">
+        <br><br><br>
+        <button onclick="calcularDiferencaDeFuel()" >Calcular</button>
+    </div>
+    <div class="box-bottom-right">
+        <p id="resultadoFuel" >Diferença</p>
+        <p id="infoFuel" ></p>
+    </div>
+    </div>
+</body>
+
+
+</html>
