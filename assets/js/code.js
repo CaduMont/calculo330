@@ -12,5 +12,5 @@ function calcularMediaDeBags()
         var fuelRecomendado = document.getElementById('fuel-rec').value;
 
         var diferencaFuel = fuelComandante - fuelRecomendado;
-        document.getElementById(Math.round('infoFuel')).innerHTML = (diferencaFuel +' kg')
+        document.getElementById('infoFuel').innerHTML = (diferencaFuel +' kg')
     }
