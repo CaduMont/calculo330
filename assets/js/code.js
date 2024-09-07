@@ -3,8 +3,8 @@ function calcularMediaDeBags()
         var quantdadePax = document.getElementById('valor1').value;
         var media3Dias = document.getElementById('valor2').value;
         var calcularMedia = quantdadePax * media3Dias;
-        var result1 = calcularMedia.toFixed(1);
-        document.getElementById('info').innerHTML = (result1 +' kg')
+        var result = calcularMedia.toFixed(1);
+        document.getElementById('info').innerHTML = (result +' kg')
     }
     function calcularDiferencaDeFuel()
     {
