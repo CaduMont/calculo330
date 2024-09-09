@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cálculo A330</title>
     <link rel="stylesheet" href="assets/css/style.css">
-    <script src="assets/js/code.js" ></script>
+    
 </head>
 <body>
     <div class="imagem"></div>
@@ -20,13 +20,25 @@
         <p>Média dos últimos 3 dias</p>
         <input id="valor2" type="number" placeholder="Digite um valor">
         <br><br><br>
-        <button onclick="calcularMediaDeBags()" >Calcular</button>
+        <button id="BCalcularMedia" onclick="calcularMediaDeBags()"><abbr title="Enter">Calcular</abbr></button>
     </div>
 
     <div class="box-right">
         <p id="resultadoMedia" >Peso de referência</p>
         <p id="info" ></p>
+        
+        <div class="medias">
+        <p id="infoCalcularAMedia">Calcule a média aqui</p>
+        <input class="med" id="media1" type="number" placeholder="">
+        <input class="med" id="media2" type="number"placeholder="">
+        <input class="med" id="media3" type="number"placeholder="">
+        <button id="botaoOk" onclick="calcularMedias()"><abbr title="Enter">Ok</abbr></button>
+        <p id="linha"></p>
+        <p id="infoCalculoMedia"></p>
+        </div>
+
     </div>
+    
 
     <div class="box-fuel">
         <h2 id="bottom-box" >Diferença de fuel</h2>
@@ -38,13 +50,14 @@
         <p>Fuel recomendado</p>
         <input id="fuel-rec" type="number" placeholder="Digite um valor">
         <br><br><br>
-        <button onclick="calcularDiferencaDeFuel()" >Calcular</button>
+        <button id="BCalcularfuel" onclick="calcularDiferencaDeFuel()"> <abbr title="Enter">Calcular</abbr></button>
     </div>
     <div class="box-bottom-right">
         <p id="resultadoFuel" >Diferença</p>
         <p id="infoFuel" ></p>
     </div>
     </div>
+    <script src="assets/js/code.js" ></script>
 </body>
 
 
