@@ -14,7 +14,7 @@
             position: absolute;
             left: 50%;
             transform: translate(-50%);
-            height: 600px;
+            height: 640px;
             padding-left: 10px;
             padding-right: 10px;
             padding-top: 0px;
@@ -43,7 +43,7 @@
             padding: 20px;
             padding-bottom: 10px;
             border-radius: 10px;
-            height: 180px;
+            height: 200px;
             box-shadow: 3px 3px 6px rgb(22, 22, 22);
         }
         input{
@@ -54,6 +54,11 @@
             box-shadow: 2px 2px 5px gray;
             font-size: 16px;
         }
+        input[type="number"]::-webkit-outer-spin-button,
+        input[type="number"]::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+        }
+        
         button
         {
             padding: 5px;
@@ -67,7 +72,15 @@
             background-color: rgb(38, 77, 184);
             cursor: pointer;
             color: white;
-            
+        }
+        #BCalcularMedia{
+            padding: 10px;
+        }
+        #BCalcularfuel{
+            padding: 10px;
+        }
+        abbr {
+            text-decoration: none;
         }
         p
         {
@@ -106,6 +119,47 @@
             box-shadow: 3px 3px 6px rgb(22, 22, 22);
             margin-left: 233px;
         }
+        #infoCalcularAMedia{
+            text-align: center;
+            padding-bottom: 5px;
+        }
+        .medias{
+            background-color: rgb(231, 231, 231);
+            padding: 1px;
+            padding-top: 5px;
+            border-radius: 10px;
+            height: 121px;
+            width: 214px;
+            box-shadow: 3px 3px 6px rgb(22, 22, 22);
+            
+        }
+        .med{
+            width: 35px;
+            position: relative;
+            left: 10px;
+            margin-right: 3px;
+        }
+        #botaoOk{
+            position: absolute;
+            margin-left: 5px;
+            padding-left: 12px;
+            padding-right: 12px;
+            position: relative;
+            left: 5px;
+        }
+        #linha{
+            border-bottom: solid 1px black;
+            padding-top: 10px;
+        }
+        #infoCalculoMedia{
+            width: 215px;
+            height: 46px;
+            border-radius: 10px;
+            text-align: center;
+            margin-top: 8px;
+            font-size: 20px;
+        }
+        
         #info
         {
             width: 215px;
@@ -147,7 +201,7 @@
             background-color: rgb(38, 77, 184);
             padding: 8px;
             width: 435px;
-            margin-top: 250px;
+            margin-top: 270px;
             border-top-left-radius: 10px;
             border-top-right-radius: 10px;
             box-shadow: 3px 3px 6px rgb(22, 22, 22);
@@ -163,7 +217,7 @@
             padding: 20px;
             padding-bottom: 10px;
             border-radius: 10px;
-            height: 180px;
+            height: 200px;
             width: 180px;
             box-shadow: 3px 3px 6px rgb(22, 22, 22);
         }
@@ -181,4 +235,5 @@
             box-shadow: 3px 3px 6px rgb(22, 22, 22);
             margin-left: 233px;
         }
+        
        
