@@ -51,3 +51,8 @@ function calcularMediaDeBags()
         }
     })
     
+    let apagar = document.getElementById('limpar');
+    apagar.onclick = function() {
+        location.reload()
+    }
+    
