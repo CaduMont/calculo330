@@ -4,60 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cálculo A330</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="style.css">
     
 </head>
 <body>
     <div class="imagem"></div>
     <div class="principal" >
-    <div class="box-title">
-        <h2 id="top-box" >Estimativa de peso de bags</h2>
-    </div>
-    <div class="box-left">
-        <p>Quantidade de PAX</p>
-        <input id="valor1" type="number" placeholder="Digite um valor">
-        <br><br>
-        <p>Média dos últimos 3 dias</p>
-        <input id="valor2" type="number" placeholder="Digite um valor">
-        <br><br><br>
-        <button id="BCalcularMedia" onclick="calcularMediaDeBags()"><abbr title="Enter">Calcular</abbr></button>
-    </div>
-
-    <div class="box-right">
-        <p id="resultadoMedia" >Peso de referência</p>
-        <p id="info" ></p>
-        
-        <div class="medias">
-        <p id="infoCalcularAMedia">Calcule as médias aqui</p>
-        <input class="med" id="media1" type="number" placeholder="">
-        <input class="med" id="media2" type="number"placeholder="">
-        <input class="med" id="media3" type="number"placeholder="">
-        <button id="botaoOk" onclick="calcularMedias()"><abbr title="Enter">Ok</abbr></button>
-        <p id="linha"></p>
-        <p id="infoCalculoMedia"></p>
+        <div class="box-title">
+            <h2 id="top-box" >Estimativa de peso de bags</h2>
         </div>
+            <div class="box-left">
+                <p id="infoQuantPax">Quantidade de PAX</p>
+                <input id="valor1" type="number" placeholder="">
+                <br><br>
+                <p id="infoMedia3Dias">Média dos últimos 3 dias</p>
+                <input id="valor2" type="number" placeholder="">
+                <br><br><br>
+                <button id="BCalcularMedia" onclick="calcularMediaDeBags()"><abbr title="Enter">Calcular</abbr></button>
+            </div>
+        
+            <div class="box-right">
+                <p id="resultadoMedia" >Peso de referência</p>
+                <p id="info"></p>
 
-    </div>
+                <div class="medias">
+                    <p id="infoCalcularAMedia">Calcule as médias aqui</p>
+                    <input class="med" id="media1" type="number" placeholder="">
+                    <input class="med" id="media2" type="number"placeholder="">
+                    <input class="med" id="media3" type="number"placeholder="">
+                    <button id="botaoOk" onclick="calcularMedias()"><abbr title="Enter">Ok</abbr></button>
+                    <p id="linha"></p>
+                    <p id="infoCalculoMedia"></p>
+                </div>
+            
+            </div>
     
-    <div class="box-fuel">
-        <h2 id="bottom-box" >Diferença de fuel</h2>
+    <div id="box-down">
+        <div class="box-fuel">
+            <h2 id="bottom-box" >Diferença de fuel</h2>
+        </div>
+        <div class="box-bottom-left">
+            <p>Fuel do Comandante</p>
+            <input id="fuel-coma" type="number" placeholder="Takeoff Fuel">
+            <br><br>
+            <p>Fuel da Navegação</p>
+            <input id="fuel-rec" type="number" placeholder="Takeoff Fuel">
+            <br><br><br>
+            <button id="BCalcularfuel" onclick="calcularDiferencaDeFuel()"> <abbr title="Enter">Calcular</abbr></button>
+        </div>
+        <div class="box-bottom-right">
+            <p id="resultadoFuel" >Diferença</p>
+            <p id="infoFuel" ></p>
+        </div>
     </div>
-    <div class="box-bottom-left">
-        <p>Fuel do Comandante</p>
-        <input id="fuel-coma" type="number" placeholder="Digite um valor">
-        <br><br>
-        <p>Fuel recomendado</p>
-        <input id="fuel-rec" type="number" placeholder="Digite um valor">
-        <br><br><br>
-        <button id="BCalcularfuel" onclick="calcularDiferencaDeFuel()"> <abbr title="Enter">Calcular</abbr></button>
     </div>
-    <div class="box-bottom-right">
-        <p id="resultadoFuel" >Diferença</p>
-        <p id="infoFuel" ></p>
-    </div>
-    </div>
-    <div id="limpar"><button id="botao"><abbr title="Apagar todos os valores">Limpar</abbr></button></div>
-    <script src="assets/js/code.js" ></script>
+    <div id="limpar"><button id="botaoLimpar"><abbr title="Apagar todos os valores">Limpar tudo</abbr></button></div>
+    <script src="code.js"></script>
 </body>
 
 
